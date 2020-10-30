@@ -1,0 +1,43 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('log_in/', views.log_in),
+    path('register/', views.register),
+    path('save_avatar/', views.save_avatar),
+    path('check_question/', views.check_question),
+    path('get_question/', views.get_question),
+    path('get_all_category/',views.get_all_category),
+    path('get_all_questions/', views.get_all_questions),
+    path('get_question_done/',views.get_question_done),
+    path('get_wrong_check_lastweek/',views.get_wrong_check_lastweek),
+    path('get_dones/',views.get_dones),
+    path('get_paper/',views.get_paper),
+    path('build_class/', views.build_class),
+    path('build_school/',views.build_school),
+    path('join_class/',views.join_class),
+    path('quit_class/', views.quit_class),
+    path('join_school/',views.join_school),
+    path('save_note/',views.save_note),
+    path('get_notes/',views.get_notes),
+    path('erase_note/',views.erase_note),
+    path('get_paper_by_year/',views.get_paper_by_year),
+    path('get_train_done/', views.get_train_done),
+    path('get_trains/', views.get_trains),
+    path('make_paper/',views.make_paper),
+    path('find_paper/',views.find_paper),
+    path('get_wrongs/',views.get_wrongs),
+    path('get_static_info/',views.get_static_info),
+    path('send_paper/',views.send_paper),
+    path('send_file/',views.send_file),
+    path('save_file/',views.save_file),
+    path('get_files/',views.get_files),
+    path('get_classes/',views.get_classes),
+    path('get_class_papers/',views.get_class_papers),
+    path('get_class_files/',views.get_class_files),
+    path('get_static_info_by_class/',views.get_static_info_by_class),
+    path('get_classes_id/',views.get_classes_id),
+    path('get_paper_by_category/',views.get_paper_by_category),
+
+]
