@@ -23,13 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ql(mu36*%4-r942_(+=tnh6o)wp5-jwgdr)w&3c)a@t3mb(f(8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '172.81.235.147',
-    'hyperlimit.cn'
+ALLOWED_HOSTS = ['*'
+    # 'localhost',
+    # '127.0.0.1',
+    # '172.81.235.147',
+    # 'hyperlimit.cn'
 ]
 
 # Application definition
